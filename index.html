@@ -87,7 +87,7 @@
   /* MIXED GRID */
   .mixed-grid { display: grid; gap: 1.2rem; }
   .mixed-grid.imgs-left-vid-right { grid-template-columns: 1fr 1.6fr; align-items: start; }
-  .mixed-grid .side-images { display: grid; gap: 1.2rem; }
+  .mixed-grid .side-images { display: grid; gap: 1.2rem; } .mixed-grid .side-images img { object-fit: contain; background: var(--off-white); }
 
   /* OUTROS PROJETOS */
   #outros { background: var(--off-white); }
@@ -143,7 +143,9 @@
     .hero-grid { grid-template-columns: repeat(5, 1fr); }
     .video-grid.double, .video-grid.triple { grid-template-columns: 1fr; }
     .mixed-grid.imgs-left-vid-right { grid-template-columns: 1fr; }
-    .image-grid.triple-img { grid-template-columns: repeat(2, 1fr); }
+    .image-grid.triple-img { grid-template-columns: 1fr; }
+    .mixed-grid.imgs-left-vid-right .side-images { grid-template-columns: 1fr; }
+    .mixed-grid.imgs-left-vid-right .side-images img { width: 100%; height: auto; max-height: none; }
     .curta-block { grid-template-columns: 1fr; }
     .sobre-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .contato-inner { flex-direction: column; align-items: flex-start; }
